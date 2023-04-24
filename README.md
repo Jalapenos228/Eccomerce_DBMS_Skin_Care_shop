@@ -247,7 +247,24 @@ CREATE TABLE Customer_review(
     CONSTRAINT fk_Customer_review_2 FOREIGN KEY (Customer_id) REFERENCES Customers (c_id)
 )
 ```
-## 4. Queries
+## 4.Normalization forms
+Customers, Address, Customer_address tables:  
+
+1st Normal Form (1NF): All columns in these tables hold atomic values. Each column has a single value, and there are no repeating groups or arrays of values.  
+2nd Normal Form (2NF): Each of these tables has a primary key defined (Customers.c_id, Address.Address_id, and the composite key Customer_address(Customer_id, Address_id)). All non-key attributes depend on the entire primary key, and there is no partial dependency.  
+3rd Normal Form (3NF): There is no transitive dependency in these tables. There are no attributes that depend on non-key attributes.  
+ 
+Therefore, the Customers, Address, and Customer_address tables are in 3NF. Product_size, Ingredients, Skin_concern, Brand, and Category tables:  
+
+1st Normal Form (1NF): All columns in these tables hold atomic values. Each column has a single value, and there are no repeating groups or arrays of values.  
+2nd Normal Form (2NF): Each of these tables has a primary key defined (Size_id, Ingredients_id, Skin_concern_id, Brand_id, and Category_id). There is no partial dependency, as all non-key attributes depend on the entire primary key.  
+3rd Normal Form (3NF): There is no transitive dependency in these tables. There are no attributes that depend on non-key attributes.  
+
+Therefore, the Product_size, Ingredients, Skin_concern, Brand, and Category tables are in 3NF. Products, Product_entry, Shopping_cart, Payment_type, Payment_method, Shipping_method, Order_status, and Shop_order tables:  
+1st Normal Form (1NF): All columns in these tables hold atomic values. Each column has a single value, and there are no repeating groups or arrays of values.  
+2nd Normal Form (2NF): Each of these tables has a primary key defined (Product_id, Product_entry_id, Cart_id, Payment_type_id, Payment_id, Shipping_id, Order_status_id, and Shop_order_id). All non-key attributes depend on the entire primary key, and there is no partial dependency.  
+3rd Normal Form (3NF): There is no transitive dependency in these tables. There are no attributes that depend on non-key attributes. Therefore, the Products, Product_entry, Shopping_cart, Payment_type, Payment_method, Shipping_method, Order_status, and Shop_order tables are in 3NF. 
+## 5. Queries
 Complete script is available in Queries.sql
 ```sql
 --1Query
