@@ -62,16 +62,16 @@ For more clear view, click here [Erd.pdf](https://github.com/Jalapenos228/Eccome
 | Ingredients        |Product_entry              |one-to-many|
 | Skin_concern       |Product_entry               |one-to-many|
 | Brand              | Product_entry          |one-to-many|
-| Product_entry      |Products           |many-to-one|
-| Product_entry      |Shopping_cart        |one-to-many|
-| Shopping_cart      |Product_entry       |many-to-one|
-| Shopping_cart      |Customers         |many-to-one|
-| Payment_type       |Payment_method      |one-to-many|
-| Payment_method     |Customers            |many-to-one|
-| Payment_method     |Payment_type        |many-to-one|
-| Payment_method     |Shop_order      |one-to-many|
-| Shipping_method    |Shop_order      |one-to-many|
-| Order_status       |Shop_order        |one-to-many|
+| Product_entry      |Products                   |many-to-one|
+| Product_entry      |Shopping_cart              |one-to-many|
+| Shopping_cart      |Product_entry           |many-to-one|
+| Shopping_cart      |Customers                |many-to-one|
+| Payment_type       |Payment_method               |one-to-many|
+| Payment_method     |Customers                    |many-to-one|
+| Payment_method     |Payment_type             |many-to-one|
+| Payment_method     |Shop_order                |one-to-many|
+| Shipping_method    |Shop_order              |one-to-many|
+| Order_status       |Shop_order                 |one-to-many|
 
 
 
