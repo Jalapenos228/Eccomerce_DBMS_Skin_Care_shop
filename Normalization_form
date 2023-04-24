@@ -1,0 +1,111 @@
+Customers table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (c_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Customers table satisfies the 3NF.
+
+Address table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Address_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Address table satisfies the 3NF.
+
+Customer_address table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has two foreign keys (Customer_id and Address_id) that together form a composite primary key. The Is_default attribute depends solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Customer_address table satisfies the 3NF.
+
+Product_size table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Size_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Product_size table satisfies the 3NF.
+
+Ingredients table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Ingredients_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Ingredients table satisfies the 3NF.
+
+Skin_concern table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Skin_concern_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Skin_concern table satisfies the 3NF.
+
+Brand table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Brand_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Brand table satisfies the 3NF.
+
+Category table:
+1NF: All columns have atomic values. There are no repeating groups or arrays in this table.
+2NF: The table has a primary key (Category_id), and all non-key attributes depend solely on the primary key.
+3NF: There are no transitive dependencies between non-key attributes.
+Therefore, the Category table satisfies the 3NF.
+
+Products table:
+The table has a primary key (Product_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+The table has no dependencies between non-key attributes.
+Therefore, the Products table is already in 3NF.
+
+Product_entry table:
+The table has a primary key (Product_entry_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key.
+Therefore, the Product_entry table is already in 3NF.
+
+Shopping_cart table:
+The table has a primary key (Cart_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key.
+Therefore, the Shopping_cart table is already in 3NF.
+
+Payment_type table:
+The table has a primary key (Payment_type_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+The table has no dependencies between non-key attributes.
+Therefore, the Payment_type table is already in 3NF.
+
+Payment_method table:
+The table has a primary key (Payment_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key and the foreign keys.
+Therefore, the Payment_method table is already in 3NF.
+
+Shipping_method table:
+The table has a primary key (Shipping_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+The table has no dependencies between non-key attributes.
+Therefore, the Shipping_method table is already in 3NF.
+
+Order_status table:
+The table has a primary key (Order_status_id) that identifies each record.
+Shop_order_id -> Customer_id, Order_date, Payment_method_id, Shipping_method_id, Shipping_address_id, Order_total, Order_status
+Customer_id -> F_name, L_name, Email, Phone
+Payment_method_id -> Payment_name, Provider, Account_number, Expire_date, Is_default
+Shipping_method_id -> Name, price
+There are no repeating groups or arrays in this table.
+The table has no dependencies between non-key attributes.
+Therefore, the Order_status table is already in 3NF.
+
+Shop_order table:
+The table has a primary key (Shop_order_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key and the foreign keys.
+Therefore, the Shop_order table is already in 3NF.
+
+Product_order table:
+The table has a primary key (Product_order_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key and the foreign keys.
+Therefore, the Product_order table is already in 3NF.
+
+Customer_review table:
+The table has a primary key (Customer_review_id) that identifies each record.
+There are no repeating groups or arrays in this table.
+All non-key attributes depend solely on the primary key and the foreign keys.
+Therefore, the Customer_review table is already in 3NF.
