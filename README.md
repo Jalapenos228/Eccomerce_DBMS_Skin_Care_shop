@@ -47,31 +47,31 @@ For more clear view, click here [Erd.pdf](https://github.com/Jalapenos228/Eccome
 
 ### 2.2.2 Entities and Relations
 
-| ENTITITY          | ENTITITY                  |   CARDINALITY    |                                                         
-| ---------          |:-------------:           |                    |
-| Customers          |Customer_address          |one-to-many|
-|  Customers         |   Shopping_cart          |one-to-many|
+| First_ENTITITY      | Second_ENTITITY                  |   CARDINALITY    |                                                         
+| ---------          | :-------------:           |                    |
+| Customers          | Customer_address          | one-to-many|
+|  Customers         |   Shopping_cart          | one-to-many|
 | Customers          |  Shop_order              |    one-to-many   |  
 | Address            |  Customer_address        |    one-to-many |        
-|  Address           |Shop_order                 |one-to-many     |
-|Customer_address    |Customers                  |many-to-one      |
-| Customer_address   |Address                     |many-to-one|
-| Products           |Category                    |many-to-one|
-| Products           |Product_entry              |one-to-many|
-| Product_size       |Product_entry              |one-to-many|
-| Ingredients        |Product_entry              |one-to-many|
-| Skin_concern       |Product_entry               |one-to-many|
-| Brand              | Product_entry          |one-to-many|
-| Product_entry      |Products                   |many-to-one|
-| Product_entry      |Shopping_cart              |one-to-many|
-| Shopping_cart      |Product_entry           |many-to-one|
-| Shopping_cart      |Customers                |many-to-one|
-| Payment_type       |Payment_method               |one-to-many|
-| Payment_method     |Customers                    |many-to-one|
-| Payment_method     |Payment_type             |many-to-one|
-| Payment_method     |Shop_order                |one-to-many|
-| Shipping_method    |Shop_order              |one-to-many|
-| Order_status       |Shop_order                 |one-to-many|
+|  Address           | Shop_order                 | one-to-many     |
+| Customer_address    | Customers                  | many-to-one      |
+| Customer_address   | Address                     | many-to-one|
+| Products           | Category                    | many-to-one|
+| Products           | Product_entry              | one-to-many|
+| Product_size       | Product_entry              | one-to-many|
+| Ingredients        | Product_entry              | one-to-many|
+| Skin_concern       | Product_entry               | one-to-many|
+| Brand              | Product_entry          | one-to-many|
+| Product_entry      | Products                   | many-to-one|
+| Product_entry      | Shopping_cart              | one-to-many|
+| Shopping_cart      | Product_entry           | many-to-one|
+| Shopping_cart      | Customers                | many-to-one|
+| Payment_type       | Payment_method               | one-to-many|
+| Payment_method     | Customers                    | many-to-one|
+| Payment_method     | Payment_type             | many-to-one|
+| Payment_method     | Shop_order                | one-to-many|
+| Shipping_method    | Shop_order              | one-to-many|
+| Order_status       | Shop_order                 | one-to-many|
 
 
 
@@ -249,7 +249,7 @@ CREATE TABLE Customer_review(
 ```
 ## 4. Queries
 Complete script is available in Queries.sql
-```pl/sql
+```sql
 --1Query
 
 CREATE OR REPLACE PROCEDURE get_avg_price_by_brand(out_result OUT SYS_REFCURSOR)
