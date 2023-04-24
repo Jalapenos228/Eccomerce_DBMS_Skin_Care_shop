@@ -12,7 +12,10 @@ This project includes the development of a database management system for an onl
 
 2. Relational Database Schema 
 ![RelationalDS](https://user-images.githubusercontent.com/75801288/234059830-f0a556af-66d7-41f3-84c1-14b29a29c91d.png)
+
+
 ![erd](https://user-images.githubusercontent.com/75801288/234060862-090bfe55-0f1e-4257-af32-857cf6d1a82a.PNG)
 
-3. Erd 
+
+
 
