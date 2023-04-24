@@ -16,6 +16,7 @@ This project includes the development of a database management system for an onl
 
 ![erd](https://user-images.githubusercontent.com/75801288/234060862-090bfe55-0f1e-4257-af32-857cf6d1a82a.PNG)
 
-
+3. Queries
+This link explains hoq works queries: https://docs.google.com/presentation/d/1Qmq1dc4ak_ik1qpzPGQebt8uIjVVPYtCo5JRdMqq7xw/edit?usp=sharing
 
 
