@@ -1,12 +1,26 @@
 # Eccomerce_DBMS_Skin_Care_shop
 
-1.Introduction  
+## Contents
+- Project Description
+- Basic structure
+  - Functional requirements
+  - Entity Relation (ER) diagram and constraints
+  - Relational database schema
+- Implementation
+  - Creating tables
+- Normalization forms
+- PL/SQL queries
+  - Function
+  - Trigger 
+  - Procedures 
 
-Team 
+## 1. Project Description  
+
+Team: 
 This project was made by Manap Zhassulan. 
-
-Project Description 
-This project includes the development of a database management system for an online skin care store. My main goal was to create a relational database solution that could effectively manage various e-commerce entities.The system will also include various procedures, functions, and triggers to enhance the functionality of the system. This document provides a comprehensive overview of our project, which includes an introduction, an Object Relationship Diagram (ERD), a relational schema, a detailed explanation of structure normal forms, and an overview of the SQL implementation. 
+ 
+E-Commerce Database Management System is a system that is designed to store, process, retrieve and analyze information concerned with the administrative and management of sales activity done by a customer online sitting at home. This project includes the development of a database management system for an online skin care store. Main goal of system was to create a relational database solution that could effectively manage various e-commerce entities.<br>
+The system will also include various procedures, functions, and triggers to enhance the functionality of the system. This document provides a comprehensive overview of our project, which includes an introduction, an Object Relationship Diagram (ERD), a relational schema, a detailed explanation of structure normal forms, and an overview of the SQL implementation. 
 
  
 
