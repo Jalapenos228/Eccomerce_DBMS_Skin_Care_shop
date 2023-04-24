@@ -47,31 +47,31 @@ For more clear view, click here [Erd.pdf](https://github.com/Jalapenos228/Eccome
 
 ### 2.2.2 Entities and Relations
 
-| First_ENTITITY      | Second_ENTITITY                  |   CARDINALITY    |                                                         
-| ---------          | :-------------:           |                    |
-| Customers          | Customer_address          | one-to-many|
-|  Customers         |   Shopping_cart          | one-to-many|
-| Customers          |  Shop_order              |    one-to-many   |  
-| Address            |  Customer_address        |    one-to-many |        
-|  Address           | Shop_order                 | one-to-many     |
-| Customer_address    | Customers                  | many-to-one      |
-| Customer_address   | Address                     | many-to-one|
-| Products           | Category                    | many-to-one|
-| Products           | Product_entry              | one-to-many|
-| Product_size       | Product_entry              | one-to-many|
-| Ingredients        | Product_entry              | one-to-many|
-| Skin_concern       | Product_entry               | one-to-many|
-| Brand              | Product_entry          | one-to-many|
-| Product_entry      | Products                   | many-to-one|
-| Product_entry      | Shopping_cart              | one-to-many|
-| Shopping_cart      | Product_entry           | many-to-one|
-| Shopping_cart      | Customers                | many-to-one|
-| Payment_type       | Payment_method               | one-to-many|
-| Payment_method     | Customers                    | many-to-one|
-| Payment_method     | Payment_type             | many-to-one|
-| Payment_method     | Shop_order                | one-to-many|
-| Shipping_method    | Shop_order              | one-to-many|
-| Order_status       | Shop_order                 | one-to-many|
+| First_ENTITITY      | Second_ENTITITY              |   CARDINALITY    |                                                         
+| ---------          | :-------------:           |   -----:                 |
+| Customers          | Customer_address          | OneToMany|
+|  Customers         |   Shopping_cart          | OneToMany|
+| Customers          |  Shop_order              |    OneToMany   |  
+| Address            |  Customer_address        |    OneToMany |        
+|  Address           | Shop_order                 | OneToMany     |
+| Customer_address    | Customers                  | ManyToOne      |
+| Customer_address   | Address                     | ManyToOne|
+| Products           | Category                    | ManyToOne|
+| Products           | Product_entry              | OneToMany|
+| Product_size       | Product_entry              | OneToMany|
+| Ingredients        | Product_entry              | OneToMany|
+| Skin_concern       | Product_entry               | OneToMany|
+| Brand              | Product_entry          | OneToMany|
+| Product_entry      | Products                   |ManyToOne|
+| Product_entry      | Shopping_cart              | OneToMany|
+| Shopping_cart      | Product_entry           | ManyToOne|
+| Shopping_cart      | Customers                | ManyToOne|
+| Payment_type       | Payment_method               | OneToMany|
+| Payment_method     | Customers                    | ManyToOne|
+| Payment_method     | Payment_type             | ManyToOne|
+| Payment_method     | Shop_order                | OneToMany|
+| Shipping_method    | Shop_order              | OneToMany|
+| Order_status       | Shop_order                 | OneToMany|
 
 
 
